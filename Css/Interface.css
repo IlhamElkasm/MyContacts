@@ -29,6 +29,20 @@ main {
   border: 1px solid black;
   overflow:auto;
 }
+
+.circle-image {
+  border-radius: 50%;
+  width: 80px; /* ajustez la taille selon vos besoins */
+  height: 80px; /* ajustez la taille selon vos besoins */
+}
+
+.divC{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 95%;
+  margin: auto;
+}
 .sec2{
   width: 60%;
 }
