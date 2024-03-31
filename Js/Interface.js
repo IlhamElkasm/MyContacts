@@ -1,3 +1,17 @@
+async function searchContacts() {
+   const searchInput = document.getElementById('searchbar').value.trim().toLowerCase();
+   const contacts = document.querySelectorAll('.divC');
+   
+   contacts.forEach(contact => {
+       const name = contact.querySelector('h5').textContent.toLowerCase();
+       if (name.includes(searchInput)) {
+           contact.style.display = 'block';
+       } else {
+           contact.style.display = 'none';
+       }
+   });
+}
+
 async function get() {
     const response = await fetch("file.json");
     const data = await response.json();
